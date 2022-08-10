@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Sprites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/4293939877.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="pokemon.svg" type="image/x-icon">
+</head>
+<body>
+ 
+ 
+
+  <button type="button" class="fake-modal-button d-none" data-bs-toggle="modal" data-bs-target="">
+    <i class="fas fa-info-circle"></i>
+ </button>
+  
+  <div class="modal fade  fake-modal    d-none " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img src="" alt="">
+
+          </div>
+          <div class="modal-content-body">
+            <div class="general">
+              <ul type="none">
+                <li> <span style="font-weight: 900;" > <i class="fas fa-weight"></i> Weight: </span>  </li>
+                <li> <span style="font-weight: 900;"> <i class="fas fa-briefcase"></i> Base Experience:</span>  </li>
+                <li><span style="font-weight: 900;"> <i class="fas fa-text-height"></i> Height: </span></li>
+              </ul>
+
+            </div>
+            <div class="stats">
+              <span style="font-weight: 700; color: green;">Stats</span>
+              <ul>
+                <li style="font-weight: 400;"><span>type</span> <span>base stat</span> <span>base effort</span> </li>
+                
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+      <nav class="c-navbar">
+       <div class="i-nav">
+        <div class="logo">
+          <img src="pokemon.svg" alt="">
+          <h1>POKEMON</h1>
+ 
+ 
+        </div>
+        
+
+       </div>
+       
+      </nav>
+    
+
+    <section class="pokemons">
+
+
+    </section>
+    <div class=" d-none each-poke">
+        <div class="no">
+
+        </div>
+        <div class="poke-inner-div">
+             <img src="" alt="" class="poke-image">
+
+
+        </div>
+        <div class="poke-name">
+            <span></span>
+            
+      
+        </div>
+        <div class="abilities">
+          <span>
+            Abilities <i class="fas fa-dumbbell"></i>
+          </span>
+          <ul type="none">
+            
+
+          </ul>
+
+        </div>
+
+
+    </div>
+    <div class="load-wrapp">
+      <div class="load-2">
+      
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+     
+
+
+    <script  defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous" defer></script>
+    <script defer src="app.js">
+
+    </script>
+</body>
+</html>

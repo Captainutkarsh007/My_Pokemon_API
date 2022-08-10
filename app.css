@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;    
+
+}
+html{
+    overflow-x: hidden;
+}
+
+/* the loading animation */
+
+.load-wrapp{
+    margin-bottom: 2em;
+
+}
+.load-2{
+    display: flex;
+    justify-content: center;
+}
+.line {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 1em   ;
+    border-radius: 15px;
+    background-color: #4b9cdb;
+  }
+  .load-2 .line:nth-last-child(1) {
+    animation: loadingB 1.5s 1s infinite;
+  }
+  .load-2 .line:nth-last-child(2) {
+    animation: loadingB 1.5s 0.5s infinite;
+  }
+  .load-2 .line:nth-last-child(3) {
+    animation: loadingB 1.5s 0s infinite;
+  }
+  
+@keyframes loadingB {
+    0%{
+      width: 15px;
+    }
+    50% {
+      width: 35px;
+    }
+    100% {
+      width: 15px;
+    }
+  }
+  
+
+  /* navbar styles */
+.c-navbar{
+    height: 80px;
+    padding: 1em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+.i-nav{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 100%;
+    display: flex;
+
+}
+.logo img{
+    height:100%;
+}
+
+/* each pokemon part */
+
+.each-poke{
+    width: 300px;
+    height: fit-content;
+    margin: 1.5rem;  
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    background-color: #e9ecef;
+}
+.each-poke:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+    transition:0.5s;
+}
+.poke-inner-div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poke-inner-div img{
+    width: 50%;
+    height: 100%;
+}
+
+.pokemons
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+.d-none{
+    display: none;
+
+}
+
+.no{
+    position: absolute;
+    top: -10%;
+    left: -4%;
+    font-size: 3rem;
+    color: darkgray;
+
+
+}
+
+.poke-name{
+    display: flex;
+    flex-direction: column;
+}
+.poke-name span{
+    font-size: large;
+    font-weight: 700;
+}
+.poke-name button{
+    margin: 1em 0em;
+    position: absolute;
+    top: -5%;
+    right: 5%;
+}
+.abilities{
+    width: 100%;
+    margin-top: 1em;
+    padding: 1em;
+}
+.abilities span{
+    font-weight: 600;
+}
+.abilities ul{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.abilities ul li{
+    background-color: white;
+   
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    
+}
+/* bootstrap modal part */
+
+
+.fake-modal-button{
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+.fake-modal-button:hover{
+    color: darkblue;
+
+}
+.modal-title{
+    font-weight: 800;
+}
+.modal-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.modal-image img{
+    width: 150px;
+    height: 150px;
+}
+.stats ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.modal-header{
+    border-bottom: none;
+}
+.stats ul li{
+    display: flex;
+    width: 100%;
+    padding: 0.5em;
+    text-align: center;
+   
+    justify-content: space-between;
+}
+.stats ul li:nth-of-type(2n){
+    background-color: #cbf3f0;
+}
+.stats ul li:first-child span{
+    font-weight: 600;
+}
+.stats ul li span{
+    width: 33%;
+}
+.stats ul li span:nth-of-type(1){
+    color: #011638;
+}
+.modal-content-body{
+    width: 100%;
+
+}
+.general{
+    display: flex;
+    width: 100%
+    
+
+}
+.general ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.general ul li span{
+    font-weight: bold;
+}
